@@ -104,7 +104,7 @@ public class Calculo {
         return x + "\n" + x1 + "\n" + x2;
         }
         return "Não há raizes reais";
-    }
+    }//closes bhaskaraResolution
     
     /**
      * @return returns all the values and the calculation
