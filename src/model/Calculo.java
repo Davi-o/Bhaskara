@@ -78,7 +78,7 @@ public class Calculo {
             return "O Valor de x1 é: " + String.valueOf(x1)+
                    "\nO valor de x2 é: " +String.valueOf(x2)+"\n";
         }
-        return "Não há raizes reais";//
+        return "Delta é menor que zero, portanto não há raizes reais";//
     }
     
     /**

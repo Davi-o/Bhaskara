@@ -30,10 +30,6 @@ public class UIBhaskara extends javax.swing.JFrame {
 
         bgResults = new javax.swing.ButtonGroup();
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        jLayeredPane4 = new javax.swing.JLayeredPane();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jtResult = new javax.swing.JTextArea();
-        jbClean = new javax.swing.JButton();
         jLayeredPane3 = new javax.swing.JLayeredPane();
         jrBoth = new javax.swing.JRadioButton();
         jrResolution = new javax.swing.JRadioButton();
@@ -46,71 +42,23 @@ public class UIBhaskara extends javax.swing.JFrame {
         jtValueB = new javax.swing.JTextField();
         jlValueC = new javax.swing.JLabel();
         jtValueC = new javax.swing.JTextField();
+        jLayeredPane4 = new javax.swing.JLayeredPane();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jtResult = new javax.swing.JTextArea();
+        jbClean = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLayeredPane4.setBorder(javax.swing.BorderFactory.createTitledBorder("Resultado"));
-
-        jtResult.setEditable(false);
-        jtResult.setColumns(20);
-        jtResult.setRows(5);
-        jScrollPane1.setViewportView(jtResult);
-
-        jbClean.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
-        jbClean.setText("Limpar");
-        jbClean.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbCleanActionPerformed(evt);
-            }
-        });
-        jbClean.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jbCleanKeyPressed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jLayeredPane4Layout = new javax.swing.GroupLayout(jLayeredPane4);
-        jLayeredPane4.setLayout(jLayeredPane4Layout);
-        jLayeredPane4Layout.setHorizontalGroup(
-            jLayeredPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(jLayeredPane4Layout.createSequentialGroup()
-                .addGap(103, 103, 103)
-                .addComponent(jbClean)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jLayeredPane4Layout.setVerticalGroup(
-            jLayeredPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 304, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jbClean, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jLayeredPane4.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane4.setLayer(jbClean, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
         jLayeredPane1Layout.setHorizontalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLayeredPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLayeredPane4)
-                .addContainerGap())
+            .addGap(0, 381, Short.MAX_VALUE)
         );
-        jLayeredPane1.setLayer(jLayeredPane4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLayeredPane3.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
@@ -257,6 +205,51 @@ public class UIBhaskara extends javax.swing.JFrame {
         jLayeredPane2.setLayer(jlValueC, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane2.setLayer(jtValueC, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        jLayeredPane4.setBorder(javax.swing.BorderFactory.createTitledBorder("Resultado"));
+
+        jtResult.setEditable(false);
+        jtResult.setColumns(20);
+        jtResult.setRows(5);
+        jScrollPane1.setViewportView(jtResult);
+
+        jbClean.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
+        jbClean.setText("Limpar");
+        jbClean.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbCleanActionPerformed(evt);
+            }
+        });
+        jbClean.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jbCleanKeyPressed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jLayeredPane4Layout = new javax.swing.GroupLayout(jLayeredPane4);
+        jLayeredPane4.setLayout(jLayeredPane4Layout);
+        jLayeredPane4Layout.setHorizontalGroup(
+            jLayeredPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(jLayeredPane4Layout.createSequentialGroup()
+                .addGap(103, 103, 103)
+                .addComponent(jbClean)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jLayeredPane4Layout.setVerticalGroup(
+            jLayeredPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 317, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jbClean, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jLayeredPane4.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane4.setLayer(jbClean, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -269,6 +262,8 @@ public class UIBhaskara extends javax.swing.JFrame {
                         .addComponent(jLayeredPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLayeredPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
@@ -276,12 +271,13 @@ public class UIBhaskara extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(7, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLayeredPane2)
                         .addGap(12, 12, 12)
                         .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addComponent(jLayeredPane4)
+                    .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         pack();
@@ -307,12 +303,11 @@ public class UIBhaskara extends javax.swing.JFrame {
                         jtResult.setText(calc.results(bgResults.getSelection().getActionCommand()));
                         break;  //closes the if
                 }//closes the switch
-            }           
-            else{
+            }else{
                 JOptionPane.showMessageDialog(rootPane, "Escolha uma opção", "Erro", JOptionPane.PLAIN_MESSAGE);
             }
         }else{
-            JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos");
+            JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos", "Erro", JOptionPane.PLAIN_MESSAGE);
         }
     }
     
@@ -325,6 +320,7 @@ public class UIBhaskara extends javax.swing.JFrame {
         jtValueC.setText("");
         jtResult.setText("");
         bgResults.clearSelection();
+        jtValueA.grabFocus();
     }
     
     private void jtValueAKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtValueAKeyPressed
