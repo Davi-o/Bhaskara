@@ -30,11 +30,6 @@ public class UIBhaskara extends javax.swing.JFrame {
 
         bgResults = new javax.swing.ButtonGroup();
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        jLayeredPane3 = new javax.swing.JLayeredPane();
-        jrBoth = new javax.swing.JRadioButton();
-        jrResolution = new javax.swing.JRadioButton();
-        jbSubmit = new javax.swing.JButton();
-        jrResult = new javax.swing.JRadioButton();
         jLayeredPane2 = new javax.swing.JLayeredPane();
         jlValueA = new javax.swing.JLabel();
         jtValueA = new javax.swing.JTextField();
@@ -42,6 +37,11 @@ public class UIBhaskara extends javax.swing.JFrame {
         jtValueB = new javax.swing.JTextField();
         jlValueC = new javax.swing.JLabel();
         jtValueC = new javax.swing.JTextField();
+        jLayeredPane3 = new javax.swing.JLayeredPane();
+        jrResult = new javax.swing.JRadioButton();
+        jrResolution = new javax.swing.JRadioButton();
+        jrBoth = new javax.swing.JRadioButton();
+        jbSubmit = new javax.swing.JButton();
         jLayeredPane4 = new javax.swing.JLayeredPane();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtResult = new javax.swing.JTextArea();
@@ -59,80 +59,6 @@ public class UIBhaskara extends javax.swing.JFrame {
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 381, Short.MAX_VALUE)
         );
-
-        jLayeredPane3.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-
-        bgResults.add(jrBoth);
-        jrBoth.setText("Ambos");
-        jrBoth.setActionCommand("both");
-        jrBoth.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jrBothKeyPressed(evt);
-            }
-        });
-
-        bgResults.add(jrResolution);
-        jrResolution.setText("Resolução Apenas");
-        jrResolution.setActionCommand("resolution");
-        jrResolution.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jrResolutionKeyPressed(evt);
-            }
-        });
-
-        jbSubmit.setText("Calcular");
-        jbSubmit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbSubmitActionPerformed(evt);
-            }
-        });
-        jbSubmit.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jbSubmitKeyPressed(evt);
-            }
-        });
-
-        bgResults.add(jrResult);
-        jrResult.setText("Resultado Apenas");
-        jrResult.setActionCommand("result");
-        jrResult.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jrResultKeyPressed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jLayeredPane3Layout = new javax.swing.GroupLayout(jLayeredPane3);
-        jLayeredPane3.setLayout(jLayeredPane3Layout);
-        jLayeredPane3Layout.setHorizontalGroup(
-            jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jrResolution)
-                    .addGroup(jLayeredPane3Layout.createSequentialGroup()
-                        .addComponent(jrBoth)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jbSubmit))
-                    .addComponent(jrResult))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jLayeredPane3Layout.setVerticalGroup(
-            jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jrResult)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jrResolution)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jrBoth)
-                    .addComponent(jbSubmit))
-                .addGap(19, 19, 19))
-        );
-        jLayeredPane3.setLayer(jrBoth, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane3.setLayer(jrResolution, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane3.setLayer(jbSubmit, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane3.setLayer(jrResult, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLayeredPane2.setBorder(javax.swing.BorderFactory.createTitledBorder("Báskara"));
 
@@ -204,6 +130,80 @@ public class UIBhaskara extends javax.swing.JFrame {
         jLayeredPane2.setLayer(jtValueB, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane2.setLayer(jlValueC, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane2.setLayer(jtValueC, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLayeredPane3.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
+        bgResults.add(jrResult);
+        jrResult.setText("Resultado Apenas");
+        jrResult.setActionCommand("result");
+        jrResult.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jrResultKeyPressed(evt);
+            }
+        });
+
+        bgResults.add(jrResolution);
+        jrResolution.setText("Resolução Apenas");
+        jrResolution.setActionCommand("resolution");
+        jrResolution.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jrResolutionKeyPressed(evt);
+            }
+        });
+
+        bgResults.add(jrBoth);
+        jrBoth.setText("Ambos");
+        jrBoth.setActionCommand("both");
+        jrBoth.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jrBothKeyPressed(evt);
+            }
+        });
+
+        jbSubmit.setText("Calcular");
+        jbSubmit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbSubmitActionPerformed(evt);
+            }
+        });
+        jbSubmit.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jbSubmitKeyPressed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jLayeredPane3Layout = new javax.swing.GroupLayout(jLayeredPane3);
+        jLayeredPane3.setLayout(jLayeredPane3Layout);
+        jLayeredPane3Layout.setHorizontalGroup(
+            jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jrResolution)
+                    .addGroup(jLayeredPane3Layout.createSequentialGroup()
+                        .addComponent(jrBoth)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jbSubmit))
+                    .addComponent(jrResult))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jLayeredPane3Layout.setVerticalGroup(
+            jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jrResult)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jrResolution)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jrBoth)
+                    .addComponent(jbSubmit))
+                .addGap(19, 19, 19))
+        );
+        jLayeredPane3.setLayer(jrResult, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(jrResolution, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(jrBoth, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane3.setLayer(jbSubmit, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jLayeredPane4.setBorder(javax.swing.BorderFactory.createTitledBorder("Resultado"));
 
@@ -283,29 +283,28 @@ public class UIBhaskara extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * @return verify if the text fields are empty, if they are, returns a JOptionPaneMsg with a error message.
+     */
     private void submit(){
         Calculo calc = new Calculo();
         
         if(!"".equals(jtValueA.getText()) || !"".equals(jtValueB.getText()) || !"".equals(jtValueC.getText())){
             calc.setValueA(Double.parseDouble(jtValueA.getText()));
             calc.setValueB(Double.parseDouble(jtValueB.getText()));
-            calc.setValueC(Double.parseDouble(jtValueC.getText()));       
-            if (!"".equals(bgResults.getSelection().getActionCommand())){
-                switch (bgResults.getSelection().getActionCommand()) {
-                    case "both":
-                        jtResult.setText(calc.results(bgResults.getSelection().getActionCommand()));
-                        JOptionPane.showMessageDialog(rootPane, calc.results("result"));
-                        break;
-                    case "result":
-                        JOptionPane.showMessageDialog(rootPane, calc.results(bgResults.getSelection().getActionCommand()), "Resultado", JOptionPane.PLAIN_MESSAGE);
-                        break;
-                    default:
-                        jtResult.setText(calc.results(bgResults.getSelection().getActionCommand()));
-                        break;  //closes the if
-                }//closes the switch
-            }else{
-                JOptionPane.showMessageDialog(rootPane, "Escolha uma opção", "Erro", JOptionPane.PLAIN_MESSAGE);
-            }
+            calc.setValueC(Double.parseDouble(jtValueC.getText()));  
+            switch (bgResults.getSelection().getActionCommand()) {
+                case "both":
+                    jtResult.setText(calc.results(bgResults.getSelection().getActionCommand()));
+                    JOptionPane.showMessageDialog(rootPane, calc.results("result"));
+                    break;
+                case "result":
+                    JOptionPane.showMessageDialog(rootPane, calc.results(bgResults.getSelection().getActionCommand()), "Resultado", JOptionPane.PLAIN_MESSAGE);
+                    break;
+                default:
+                    jtResult.setText(calc.results(bgResults.getSelection().getActionCommand()));
+                    break;  //closes the if
+            }//closes the switch
         }else{
             JOptionPane.showMessageDialog(rootPane, "Preencha todos os campos", "Erro", JOptionPane.PLAIN_MESSAGE);
         }
